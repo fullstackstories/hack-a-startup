@@ -1,0 +1,2 @@
+class TipoSuelo < ApplicationRecord
+end
