@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tipo Cultivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipo_cultivos.each do |tipo_cultivo| %>
+      <tr>
+        <td><%= tipo_cultivo.nombre %></td>
+        <td><%= link_to 'Show', tipo_cultivo %></td>
+        <td><%= link_to 'Edit', edit_tipo_cultivo_path(tipo_cultivo) %></td>
+        <td><%= link_to 'Destroy', tipo_cultivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipo Cultivo', new_tipo_cultivo_path %>

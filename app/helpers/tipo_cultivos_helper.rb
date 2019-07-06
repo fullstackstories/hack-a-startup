@@ -1,0 +1,2 @@
+module TipoCultivosHelper
+end
