@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cultivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Necesidad (m3 / Ha / año)</th>
+      <th>Tipo de cultivo</th>
+      <th>Tipo de suelo</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cultivos.each do |cultivo| %>
+      <tr>
+        <td>
+          <%= cultivo.nombre %>
+        </td>
+        <td>
+          <%= cultivo.necesidad %>
+        </td>
+        <td>
+          <%= cultivo.tipo_cultivo.nombre %>
+        </td>
+        <td>
+          <%= cultivo.tipo_suelo.nombre %>
+        </td>
+        <td>
+          <%= link_to 'Info', cultivo %>
+          <%= link_to 'Editar', edit_cultivo_path(cultivo) %>
+          <%= link_to 'Borrar', cultivo, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo', new_cultivo_path %>

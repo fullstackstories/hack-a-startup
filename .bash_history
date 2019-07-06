@@ -36,3 +36,8 @@ ls
 bin/rails db:migrate RAILS_ENV=development VERSION=20190706124552
 bin/rails db:migrate RAILS_ENV=development
 exit
+bin/rails c
+rails generate active_admin:resource TipoCultivo
+bin/rails generate active_admin:resource TipoCultivo
+bin/rails generate active_admin:resource TipoSuelo
+exit

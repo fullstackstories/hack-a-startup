@@ -1,0 +1,40 @@
+<div style="margin: 10px">
+  <%= form_with(model: cultivo, local: true) do |form| %>
+    <% if cultivo.errors.any? %>
+      <div id="error_explanation" class='alert alert-danger'>
+        <h2><%= pluralize(cultivo.errors.count, "error") %> prohibited this cultivo from being saved:</h2>
+
+        <ul>
+        <% cultivo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= form.label :nombre %>
+      <%= form.text_field :nombre, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :necesidad %> (m3 / Ha)
+      <%= form.text_field :necesidad, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :tipo_cultivo_ %>
+      <%= form.collection_select :tipo_cultivo_id, TipoCultivo.all, :id, :nombre, {}, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :tipo_suelo %>
+      <%= form.collection_select :tipo_suelo_id, TipoSuelo.all, :id, :nombre, {}, class: 'form-control' %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit 'Guardar' %>
+    </div>
+  <% end %>
+
+</div>

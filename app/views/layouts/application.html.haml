@@ -1,0 +1,33 @@
+!!! DOCTYPE
+%html
+  %head
+    %title i-solagua
+    = csrf_meta_tag
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{rel:"stylesheet", href:"https://bootswatch.com/4/sandstone/bootstrap.css", media:"screen"}
+
+  %body{style: 'background-color: #eee'}
+    .bs-component  
+      %nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+        %a.navbar-brand{href: "#"} 
+          LOGO
+        
+        %button.navbar-toggler{type: "button", 'data-toggle' =>"collapse",  'data-target' => "#navbarColor01", 'aria-controls' => "navbarColor01", 'aria-expanded' => "false", 'aria-label' => "Toggle navigation"}
+          %span.navbar-toggler-icon
+
+        .collapse.navbar-collapse#navbarColor01
+          %ul.navbar-nav.mr-auto
+            %li.nav-item
+              %a.nav-link{href: "/"}
+                Panel 
+                %span.sr-only (current)
+            %li.nav-item
+              %a.nav-link{href: "/cultivos"}
+                Tus cultivos
+                %span.sr-only (current)
+
+
+    = yield

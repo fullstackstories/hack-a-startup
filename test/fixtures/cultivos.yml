@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  necesidad: MyString
+  tipo_cultivo: one
+  tipo_suelo: one
+
+two:
+  necesidad: MyString
+  tipo_cultivo: two
+  tipo_suelo: two

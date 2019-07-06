@@ -1,0 +1,60 @@
+.row
+    .col-12.col-md-3
+        .bs-component{style: 'margin: 10px'}
+            .card.mb-3
+                .card-header
+                    Mejorada del campo
+                .card-body
+                    .card-title
+                    .car-text
+                        %ul.list-unstyled
+                            %li
+                                %strong Necesidad:                            
+                                6000 m3/Hc por año
+                            %li
+                                %strong Tipo de cultivo
+                            %li
+                                %strong Tipo de suelo
+    .col-12.col-md-6
+        %div{style: 'margin: 10px'}
+            .card.mb-3.bg-success.text-white
+                .card-header
+                    Recomendaciones
+                .card-body
+                    .card-title
+
+                    .card-text
+                        .text-center
+                            %p Necesidad de agua para hoy: 30 m3 / Ha
+                            %p Recomendación: 25 m3 / Ha
+                            %span{'data-toggle' => "collapse", href:"#collapseExample", role: "button", 'aria-expanded' => "false", 'aria-controls' => "collapseExample"} Más información...
+                            .collapse#collapseExample{style: 'margin-bottom: 30px; color: black'}
+                                .card.card-body.text-left 
+                                    Te sugerimos regar sólo 25 m3 / Ha porque:                                
+                                    %ul
+                                        %li
+                                            La humedad del suelo a un metro es del 15%
+                                        %li
+                                            Mañana se espera una bajada de temperaturas
+                        %hr
+                        .row
+                            .col
+                                ¿No te parece adecuada la recomendación?
+                                %a Dinos por qué...
+                            .col.text-right                                                        
+                                %button.btn.btn-success{type: 'button'}
+                                    Aceptar recomendación
+
+
+
+            .bs-component
+                =image_tag 'map', class: 'img-fluid'        
+
+    .col-12.col-md-3
+        .bs-component{style: 'margin: 10px'}
+            .card{style: 'padding: 10px; background-color: #1f567c'}
+                <a class="weatherwidget-io" href="https://forecast7.com/en/42d60n5d57/leon/" data-label_1="LEÓN" data-label_2="WEATHER" data-theme="original" >LEÓN WEATHER</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
+
+        .bs-component{style: 'margin: 10px; text-align: center'}
+            .card{style: 'padding: 10px; background-color: black'}
+                <div id="rigref-solar-widget"></div><script type="text/javascript">(function() {var a = document.createElement('a');var i = document.createElement('img');var s = document.getElementById('rigref-solar-widget');a.href = ('https://rigreference.com/solar');a.target = '_blank';i.src = ('https://rigreference.com/solar/img/cb');i.border = 0;a.appendChild(i);s.appendChild(a);})();</script>
