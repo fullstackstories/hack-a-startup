@@ -2,7 +2,7 @@
 
 (see spanish version below)
 
-Repository containing the web-app developed during the event [hack-a-startup (link in spanish)](https://cftic.centrosdeformacion.empleo.madrid.org/proyectos/planes-nacionales-sepe/concurso-de-programacion) that took place at the CFTIC in Getafe (Madrid).
+Repository containing the web-app developed during the event [hack-a-startup](https://fullstackstories.github.io/2019/07/07/hack-a-startup.html) that took place at the CFTIC in Getafe (Madrid).
 
 It's a proof of concept of a responsive web application to control irrigation system of a farm.
 
@@ -60,7 +60,7 @@ Create a new crop (cultivo) and have a look at the interface for the farmer.
 
 # Spanish version
 
-Repositorio con el código que desarrollé en el evento ["hack-a-startup"](https://cftic.centrosdeformacion.empleo.madrid.org/proyectos/planes-nacionales-sepe/concurso-de-programacion) que tuvo lugar en el CFTIC de Getafe.
+Repositorio con el código que desarrollé en el evento ["hack-a-startup"](https://fullstackstories.github.io/2019/07/07/hack-a-startup.html) que tuvo lugar en el CFTIC de Getafe.
 
 Se trata de una prueba de concepto de lo que sería una aplicación para controlar el riego de un cultivo.
 
